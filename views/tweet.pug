@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 ALL Tweets
+  each tweet in tweets
+    h2 ID:#{tweet.id}
+    p Message: #{tweet.message}
+    p Author: #{tweet.author}
+    p Create Date: #{tweet.createDate} 
+    hr
+  
+
